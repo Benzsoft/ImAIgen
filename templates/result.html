@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Image Generation Result</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Image Generation Result</h1>
+    </header>
+    <main>
+        {% for image_url in image_urls %}
+        <img src="{{ image_url }}" alt="Generated Image">
+        {% endfor %}
+    </main>
+    <footer>
+        <p>Image Generation App &copy; 2023</p>
+    </footer>
+</body>
+</html>

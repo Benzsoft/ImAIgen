@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ImAIgen - Image Generation App</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Image Generation App</h1>
+    </header>
+    <main>
+        <form action="{{ url_for('generate') }}" method="POST">
+            <label for="prompt">Enter your text prompt:</label>
+            <textarea id="prompt" name="prompt" placeholder="Enter your prompt..." required></textarea>
+            <button type="submit">Generate Image</button>
+        </form>
+    </main>
+    <footer>
+        <p>ImAIgen - Image Generation App by Benzsoft &copy; 2023</p>
+    </footer>
+</body>
+</html>
