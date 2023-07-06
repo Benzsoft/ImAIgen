@@ -1,4 +1,4 @@
-# Image Generation App
+# ImAIgen - Image Generation App by Benzsoft
 
 The Image Generation App is a Python-based web application that utilizes the OpenAI API to generate images based on user-provided text prompts. The app provides an intuitive interface for users to input their prompts and view the corresponding generated images.
 
